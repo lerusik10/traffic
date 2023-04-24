@@ -10,7 +10,7 @@ const LineData = [
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: 0 + time,
+        x: "plane",
         y: getRandomInt(200),
       },
       {

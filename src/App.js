@@ -28,7 +28,7 @@ function build(){
 
 
 
-
+export let time1 = '';
 
 export let time = '';
 let data_day1 ='';
@@ -115,8 +115,8 @@ function App() {
           document.querySelector('.firstday').innerHTML = data_day1;
           document.querySelector('.lastday').innerHTML = data_day2;
           //LineChart({ isDashboard : true } );
-          time = moment(data_day2)-moment(data_day1);
-          time = moment.duration(time, 'milliseconds').asHours() / data_hours;
+          time1 = moment(data_day2)-moment(data_day1);
+          time = moment.duration(time1, 'milliseconds').asHours() / data_hours;
           if (data_minutes != "0") time = moment.duration(time, 'milliseconds').asMinutes() / data_minutes;
           if (data_seconds != "0") time = moment.duration(time, 'milliseconds').asSeconds() / data_seconds;
         }}>Построить</Button>
