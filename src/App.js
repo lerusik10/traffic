@@ -119,6 +119,7 @@ function App() {
           time = moment.duration(time1, 'milliseconds').asHours() / data_hours;
           if (data_minutes != "0") time = moment.duration(time, 'milliseconds').asMinutes() / data_minutes;
           if (data_seconds != "0") time = moment.duration(time, 'milliseconds').asSeconds() / data_seconds;
+          updateDiv();
         }}>Построить</Button>
         
         </div>
@@ -144,7 +145,6 @@ function App() {
     </div>
   );
 };
-
 
 
 

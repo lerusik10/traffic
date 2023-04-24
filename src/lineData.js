@@ -1,7 +1,7 @@
 import { blue, grey, red } from "@mui/material/colors";
 import { tokens } from "./theme";
 import { ways } from "./date1";
-import { time } from "./App";
+import { time, time1 } from "./App";
 
 
 const LineData = [
@@ -10,7 +10,7 @@ const LineData = [
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: "plane",
+        x: time1 - time,
         y: getRandomInt(200),
       },
       {
